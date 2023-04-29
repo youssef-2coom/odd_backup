@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="sale_report_page" name="Sales Report">
+    
+<t t-call="portal.portal_layout">
+        
+<t t-set="breadcrumbs_searchbar" t-value="True"/>
+        
+<form>
+            
+<div id="wrap_sales">
+                
+<div>
+                    
+<center>
+                        
+<h1 style="margin: 20px;">
+                            
+<b>Sale Report</b>
+                        
+</h1>
+                    
+</center>
+                
+</div>
+                
+<table class="table table-sm table-bordered">
+                    
+<thead>
+                        
+<tr align="center">
+                            
+<th colspan="6" class="text-left">Sl no.</th>
+                            
+<th colspan="6" class="text-left">Order</th>
+                            
+<th colspan="6" class="text-center">Order Date</th>
+                            
+<th colspan="6" class="text-center">Product</th>
+                            
+<th colspan="6" class="text-center">Quantity</th>
+                            
+<th colspan="6" class="text-center">Unit Price</th>
+                        
+</tr>
+                    
+</thead>
+                    
+<tbody class="text-left">
+                        
+<tr class="sales_table" t-foreach="datas" t-as="main" align="center">
+                            
+<td colspan="6">
+                                
+<span id="so_id" t-esc="main['id']"/>
+                            
+</td>
+                            
+<td colspan="6">
+                                
+<span id="so_name" t-esc="main['order']"/>
+                            
+</td>
+                            
+<td colspan="6">
+                                
+<span id="so_date" t-esc="main['date']"/>
+                            
+</td>
+                            
+<td colspan="6">
+                                
+<span id="so_product" t-esc="main['product']"/>
+                            
+</td>
+                            
+<td colspan="6">
+                                
+<span id="p_quantity" t-esc="main['quantity']"/>
+                            
+</td>
+                            
+<td colspan="6">
+                                
+<span id="p_unit_price"    t-esc="main['unit_price']"/>
+                            
+</td>
+                        
+</tr>
+                    
+</tbody>
+                
+</table>
+            
+</div>
+        
+</form>
+    
+</t>
+</template>
+</odoo>

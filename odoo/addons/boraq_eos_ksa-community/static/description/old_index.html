@@ -1,0 +1,147 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced" style="max-width: 100%;">
+        <h2 class="oe_slogan">End of Service</h2>
+        <h3 class="oe_slogan">The aim of this module is to calculate the end of service reward, which is given to the employee at the last pay slip generated for him. The calculation of this reward is based on Saudi labor law</h3>
+        <div class="oe_span12" style="max-width: 100%;">
+            <div class="panel panel-primary">
+              <div class="panel-body">
+                  <p>The reward is calculated under three options:</p>
+                  <div class="alert alert-info">
+                      <i class="fa fa-arrow-circle-o-right"></i>
+                      <b>1- If the employee sign for his resignation</b>
+                  </div>
+                  <ul class="list-unstyled">
+                      <li style="font-size: 15px;"><i class="fa fa-check text-primary"></i>If the employee spends less than 2 years in the company then he wouldn’t get any reward.</li>
+                      <li style="font-size: 15px;"><i class="fa fa-check text-primary"></i>If the employee spends between 2 and 5 years in the company then he will:<br>
+                        Reward = ((Wage/2) * service years)/3</li>
+                        <li style="font-size: 15px;"><i class="fa fa-check text-primary"></i>If the employee spends between 5 and 10 years then his reward will be:<br> 
+                        Reward = ((Wage*2.5) +(Wage*(service years – 5)) *(2/3)</li>
+                        <li style="font-size: 15px;"><i class="fa fa-check text-primary"></i>If the employee spends more than 10 years:<br> 
+                        Reward = (Wage*2.5) + (Wage *(service years – 5))</li>
+                  </ul>
+                  <div class="alert alert-info">
+                    <i class="fa fa-arrow-circle-o-right"></i>
+                    <b>2- If the contract is end and both sides (company and employee) don’t need to renew it</b>
+                  </div>
+                  <ul class="list-unstyled">
+                    <li style="font-size: 15px;"><i class="fa fa-check text-primary"></i>If the employee spends less than 2 years in the company then he wouldn’t get anything.</li>
+                    <li style="font-size: 15px;"><i class="fa fa-check text-primary"></i>b.	If the employee spends between 2 and 5 years in the company then he will:<br>
+                        Reward = (Wage/2) * service years</li>
+                      <li style="font-size: 15px;"><i class="fa fa-check text-primary"></i>If the employee spends between 5 and 10 years then his reward will be:<br> 
+                        Reward = ((Wage*2.5) +(Wage*(service years – 5)) </li>
+                      <li style="font-size: 15px;"><i class="fa fa-check text-primary"></i>d.	If the employee spends more than 10 years:<br> 
+                        Reward = (Wage*2.5) + (Wage *(service years – 5))</li>
+                  </ul>
+                  <div class="alert alert-info">
+                    <i class="fa fa-arrow-circle-o-right"></i>
+                    <b>3- 3.	If the company terminates employee’s contract</b>
+                  </div>
+                  <ul class="list-unstyled">
+                    <li style="font-size: 15px;"><i class="fa fa-check text-primary"></i>If the employee spends more than 10 years he will get:<br>
+                        Reward = (Wage/2)*5 + (Wage*(service year – 5))</li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced" style="max-width: 100%;">
+        <div class="oe_span12" style="max-width: 100%;">
+            <div class="alert alert-info">
+                <i class="fa fa-arrow-circle-o-right"></i>
+                <b>Configuration</b>
+            </div>
+            <p>1- From payroll module go to Configuration menu, then choose <b>Salary Structure</b></p>
+            <div class="oe_demo oe_picture oe_screenshot" style="max-height: 100%;">
+                <a href="screenshot/1.png" target="_blank">
+                    <img src="screenshot/1.png" alt="Online Demo">
+                </a>
+            </div>
+            <br></br>
+            <p>2- Choose any structure from the list</p>
+            <div class="oe_demo oe_picture oe_screenshot" style="max-height: 100%;">
+                <a href="screenshot/2.png" target="_blank">
+                    <img src="screenshot/2.png" alt="Online Demo">
+                </a>
+            </div>
+            <br></br>
+            <p>3- Click on Edit Button</p>
+            <div class="oe_demo oe_picture oe_screenshot" style="max-height: 100%;">
+                <a href="screenshot/3.png" target="_blank">
+                    <img src="screenshot/3.png" alt="Online Demo">
+                </a>
+            </div>
+            <br></br>
+            <p>4- Click on Add a line, then choose "Reward" from the options</p>
+            <div class="oe_demo oe_picture oe_screenshot" style="max-height: 100%;">
+                <a href="screenshot/4.png" target="_blank">
+                    <img src="screenshot/4.png" alt="Online Demo">
+                </a>
+            </div>
+            <br></br>
+            <p>5- The reward will be added as a line in salary rules. Just click “<b>Save</b>” button</p>
+            <div class="oe_demo oe_picture oe_screenshot" style="max-height: 100%;">
+                <a href="screenshot/5.png" target="_blank">
+                    <img src="screenshot/5.png" alt="Online Demo">
+                </a>
+            </div>
+            <br></br>
+            <div class="alert alert-info">
+                <i class="fa fa-arrow-circle-o-right"></i>
+                <b>Usage</b>
+            </div>
+            <p>In order to get the End of service reward, we have to go through the following steps:</p>
+            <p>1- Go to employee contract, navigate to “EoS Setup tab” then activate “End of Contract?” option</p>
+            <div class="oe_demo oe_picture oe_screenshot" style="max-height: 100%;">
+                <a href="screenshot/6.png" target="_blank">
+                    <img src="screenshot/6.png" alt="Online Demo">
+                </a>
+            </div>
+            <p>Then choose reason for ending the contract:</p>
+            <ul><li>Resign</li>
+                <li>End of contract</li>
+                <li>Terminate</li>
+            </ul>
+            <br></br>
+            <p>2- Go to payroll, click on create new Employee Payslip</p>
+            <div class="oe_demo oe_picture oe_screenshot" style="max-height: 100%;">
+                <a href="screenshot/7.png" target="_blank">
+                    <img src="screenshot/7.png" alt="Online Demo">
+                </a>
+            </div>
+            <br></br>
+            <p>3- Fill the pay slip information, and then click on “Compute Sheet”<br></br>
+                Then you will get the result</p>
+            <div class="oe_demo oe_picture oe_screenshot" style="max-height: 100%;">
+                <a href="screenshot/8.png" target="_blank">
+                    <img src="screenshot/8.png" alt="Online Demo">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container lead">
+    <div class="oe_row" style="max-width: 100%;">
+<!--             <div class="oe_span12" style="max-width: 100%;">
+                <h2 class="oe_slogan">Complimentary Support</h2>
+                <p>
+                You will get 90 days free support for any doubt, queries, and bug fixing (excluding data recovery) or any type of issue related to this module.
+                </p>
+            </div> -->
+    </div>
+    <div class="oe_row oe_spaced" style="max-width: 100%;">
+        <div class="oe_span12" style="max-width: 100%;">
+            <h2 class="oe_slogan text-center">Help and Support</h2>
+        </div>
+        <br>
+        <div class="oe_slogan oe_spaced text-center">
+            <a class="mt8" title="Website" href="https://boraq-group.com" target="_blank"> https://boraq-group.com </a> | 
+            <a class="mt8" title="Contact Us" href="mailto:support@boraq-group.com" target="_blank"> support@boraq-group.com </a> | 
+            <a class="mt8" title="Call Us" href="tel:00902128036065" target="_blank"> +90 (212) 803 60 65 / 66 </a>
+        </div>
+    </div>
+</section>
+

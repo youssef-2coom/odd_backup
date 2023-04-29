@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+
+    <!-- Hr employee inherit Legal Leaves -->
+    <record id="custom_hr_payroll_structure" model="ir.ui.view">
+        <field name="name">custom_hr_payroll_structure</field>
+        <field name="model">hr.payroll.structure</field>
+        <field name="inherit_id" ref="hr_payroll_community.view_hr_employee_grade_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='rule_ids']" position="replace">
+                 <field name="rule_ids" attrs="{'readonly': [('id', '=', False)]}" widget="many2many">
+                     <tree>
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="category_id"/>
+                        <field name="sequence" invisible="1"/>
+<!--                        <field name="partner_id"/>-->
+                     </tree>
+                  </field>
+            </xpath>
+        </field>
+    </record>
+
+
+</odoo>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="structure_type_employee" model="hr.payroll.structure.type">
+            <field name="name">Employee</field>
+            <field name="country_id" eval="False"/>
+        </record>
+
+		<!-- Added New category -->
+        <record id="Reward" model="hr.salary.rule.category">
+            <field name="name">REWARD</field>
+            <field name="code">REWARD</field>
+        </record>
+
+        <record id="hr_payroll_regular_pay" model="hr.payroll.structure">
+            <field name="name">Regular Salary Structure</field>
+            <field name="code">Regular</field>
+<!--            <field name="type_id" ref="structure_type_employee"/>-->
+        </record>
+        
+        <!-- Create Reward rule -->
+        <record id="hr_rule_reward" model="hr.salary.rule">
+            <field name="name">Reward</field>
+            <field name="sequence" eval="1"/>
+            <field name="code">REWARD</field>
+            <field name="category_id" ref="Reward"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="sequence" eval="150"/>
+            <field name="amount_python_compute">if contract.end_contract == True:
+    if payslip.date_from &lt;= contract.date_end &lt;= payslip.date_to:
+        if contract. eos_reason == 'endcontract':
+            if contract.service_year > 2 and contract.service_year &lt;= 5:
+                result = (contract.wage /2 ) * contract.service_year
+            elif contract.service_year > 5 and contract.service_year &lt;= 10 :
+                result = ((contract.wage *2.5) + (contract.wage * (contract.service_year - 5) ) )
+            elif contract.service_year > 10:
+                result = (contract.wage *2.5) + (contract.wage * (contract.service_year  - 5 ))
+            else:
+                result= 0
+        if contract. eos_reason == 'terminate': 
+            if contract.service_year >= 10:
+                result=((contract.wage/2) *5)  + (contract.wage  * (contract.service_year -5 ))
+            else:
+                result=0
+        if contract. eos_reason == 'resign':
+            if contract.service_year &lt;= 2 :
+                result =0
+            elif contract.service_year > 2 and contract.service_year &lt;= 5 :
+                result =( (contract.wage/2) * contract.service_year)/3
+            elif contract.service_year > 5 and contract.service_year &lt;= 10 :
+                result = ((contract.wage *2.5) + (contract.wage * (contract.service_year - 5) ) ) *  (2/3)
+            elif contract.service_year > 10:
+                result = (contract.wage *2.5) + (contract.wage * (contract.service_year  - 5 ))
+            else:
+                result= 0
+    else:
+        result= 0
+else:
+    result=0
+            </field>
+<!--            <field name="struct_id" ref="hr_payroll_regular_pay"/>-->
+        </record>
+
+		<!-- Update Net rule-->
+		<record id="hr_rule_net" model="hr.salary.rule">
+		 <field name="name">Net Salary</field>
+		 <field name="sequence" eval="200"/>
+		 <field name="code">NET</field>
+		 <field name="category_id" ref="hr_payroll_community.NET"/>
+		 <field name="condition_select">none</field>
+		 <field name="amount_select">code</field>
+		 <field name="amount_python_compute">result = categories.BASIC + categories.ALW + categories.REWARD + categories.DED</field>
+<!--		 <field name="register_id" ref="contrib_register_employees"/>-->
+<!--         <field name="struct_id" ref="hr_payroll_regular_pay"/>-->
+		 </record>
+
+        <!-- paid leave calculation -->
+        <record id="hr_rule_paid_leave" model="hr.salary.rule">
+            <field name="name">Paid Leave</field>
+            <field name="sequence" eval="151"/>
+            <field name="code">PAIDLEAVE</field>
+            <field name="category_id" ref="hr_payroll_community.ALW"/>
+            <field name="condition_select">none</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+if contract.end_contract == True:
+    if payslip.date_from &lt;= contract.date_end &lt;= payslip.date_to:
+        result = (contract.wage /30) *(employee.remaining_paid_leaves)
+    else:
+        result=0
+else:
+    result=0</field>
+<!--            <field name="struct_id" ref="hr_payroll_regular_pay"/>-->
+        </record>
+    </data>
+</odoo>

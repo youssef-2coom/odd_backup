@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+   <template id="sales_report_portal" name="Sales Report"    inherit_id="portal.portal_my_home">
+       <xpath expr="//div[hasclass('o_portal_docs')]" position="before">
+           <a id="sales_portal_report" role="button"
+              href="/sales/report" style="width: 635px;"
+              class="btn btn-primary btn-block">
+               <i class="fa fa-ticket"/>
+               Sales Report
+           </a>
+       </xpath>
+   </template>
+</odoo>

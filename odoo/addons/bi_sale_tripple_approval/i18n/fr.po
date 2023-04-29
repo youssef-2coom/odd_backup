@@ -1,0 +1,373 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bi_sale_tripple_approval
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-02 13:59+0000\n"
+"PO-Revision-Date: 2021-04-02 13:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bi_sale_tripple_approval
+#: model:mail.template,body_html:bi_sale_tripple_approval.sale_order_approval_email_template
+msgid ""
+"\n"
+"            \n"
+"          \n"
+"\t       \n"
+"          \n"
+"          \n"
+"             <p>Dear ${object.finance_manager_id.name},</p>\n"
+"          \n"
+"          <br/>\n"
+"\t      <br/>\n"
+"        <p>Approve sale order ${object.name} </P>\n"
+"        <table>\n"
+"       <tr><th>${object.company_id.name}</th></tr>\n"
+"         <tr> <td>${object.company_id.street}</td></tr>\n"
+"        <tr>  <td>${object.company_id.street2}</td></tr>\n"
+"         <tr> <td>${object.company_id.city}</td></tr>\n"
+"          <tr><td>${object.company_id.state_id.name}</td><td>${object.company_id.zip}</td></tr>\n"
+"        <tr>  <td>${object.company_id.country_id.name}</td></tr>\n"
+"        <tr>  <td></td> </tr>\n"
+"         <tr> <td><p>Phone :</p>${object.company_id.phone}</td></tr>\n"
+"        <tr>  <td><p>Website :</p>${object.company_id.website}</td></tr>\n"
+"        </table>\n"
+"\n"
+"\n"
+"\n"
+"  \n"
+"\t  "
+msgstr ""
+
+#. module: bi_sale_tripple_approval
+#: model:mail.template,body_html:bi_sale_tripple_approval.sale_refused_email_template
+msgid ""
+"\n"
+"            \n"
+"          \n"
+"         \n"
+"          \n"
+"          \n"
+"             \n"
+"          \n"
+"          <br/>\n"
+"        \n"
+"        <p> Sale order ${object.name} is canceled by ${object.refused_by_id.name} and the reason is : \n"
+"          ${object.refuse_reason} </P>\n"
+"\n"
+"\n"
+"  \n"
+"    "
+msgstr ""
+
+#. module: bi_sale_tripple_approval
+#: model:mail.template,body_html:bi_sale_tripple_approval.sale_order_approval_email_template_finance
+msgid ""
+"\n"
+"            \n"
+"          \n"
+"         \n"
+"          \n"
+"          \n"
+"             <p>Dear ${object.finance_manager_id.name},</p>\n"
+"          \n"
+"          <br/><br/>\n"
+"        \n"
+"        <p>Approve sale order ${object.name} </P>\n"
+"\n"
+"        <table>\n"
+"       <tr><th>${object.company_id.name}</th></tr>\n"
+"         <tr> <td>${object.company_id.street}</td></tr>\n"
+"        <tr>  <td>${object.company_id.street2}</td></tr>\n"
+"         <tr> <td>${object.company_id.city}</td></tr>\n"
+"          <tr><td>${object.company_id.state_id.name}</td><td>${object.company_id.zip}</td></tr>\n"
+"        <tr>  <td>${object.company_id.country_id.name}</td></tr>\n"
+"        <tr>  <td></td> </tr>\n"
+"         <tr> <td><p>Phone :</p>${object.company_id.phone}</td></tr>\n"
+"        <tr>  <td><p>Website :</p>${object.company_id.website}</td></tr>\n"
+"        </table>\n"
+"\n"
+"\n"
+"\n"
+"  \n"
+"    "
+msgstr ""
+
+#. module: bi_sale_tripple_approval
+#: model:mail.template,body_html:bi_sale_tripple_approval.sale_order_approval_email_template_director
+msgid ""
+"\n"
+"            \n"
+"          \n"
+"         \n"
+"          \n"
+"          \n"
+"             <p>Dear ${object.sale_director_id.name},</p>\n"
+"          \n"
+"          <br/><br/>\n"
+"        \n"
+"        <p>Approve sale order ${object.name} </P>\n"
+"\n"
+"\n"
+"        <table>\n"
+"       <tr><th>${object.company_id.name}</th></tr>\n"
+"         <tr> <td>${object.company_id.street}</td></tr>\n"
+"        <tr>  <td>${object.company_id.street2}</td></tr>\n"
+"         <tr> <td>${object.company_id.city}</td></tr>\n"
+"          <tr><td>${object.company_id.state_id.name}</td><td>${object.company_id.zip}</td></tr>\n"
+"        <tr>  <td>${object.company_id.country_id.name}</td></tr>\n"
+"        <tr>  <td></td> </tr>\n"
+"         <tr> <td><p>Phone :</p>${object.company_id.phone}</td></tr>\n"
+"        <tr>  <td><p>Website :</p>${object.company_id.website}</td></tr>\n"
+"        </table>\n"
+"\n"
+"\n"
+"\n"
+"  \n"
+"    "
+msgstr ""
+
+#. module: bi_sale_tripple_approval
+#: model_terms:ir.ui.view,arch_db:bi_sale_tripple_approval.view_sale_order_form_inherit
+msgid "Approve Dates"
+msgstr "Approuver les dates"
+
+#. module: bi_sale_tripple_approval
+#: model_terms:ir.ui.view,arch_db:bi_sale_tripple_approval.view_sale_order_form_inherit
+msgid "Approve Department"
+msgstr "Approuver le département"
+
+#. module: bi_sale_tripple_approval
+#: model_terms:ir.ui.view,arch_db:bi_sale_tripple_approval.view_sale_order_form_inherit
+msgid "Approve Details"
+msgstr "Approuver les détails"
+
+#. module: bi_sale_tripple_approval
+#: model_terms:ir.ui.view,arch_db:bi_sale_tripple_approval.view_sale_order_form_inherit
+msgid "Approve order"
+msgstr "Approuver la commande"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields.selection,name:bi_sale_tripple_approval.selection__sale_order__state__cancel
+msgid "Cancelled"
+msgstr "Annulé"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model,name:bi_sale_tripple_approval.model_res_company
+msgid "Companies"
+msgstr "Sociétés"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_res_company__sale_director_approval_email_temp_id
+msgid "Director  Approval Email Template"
+msgstr "Modèle d'e-mail d'approbation du directeur"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields.selection,name:bi_sale_tripple_approval.selection__sale_order__state__third_approve
+#: model_terms:ir.ui.view,arch_db:bi_sale_tripple_approval.view_sale_order_form_inherit
+msgid "Director Approval"
+msgstr "Approbation du directeur"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_sale_order__sale_director_id
+msgid "Director Manager"
+msgstr "Directeur Manager"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_sale_order__sale_director_id_approval_date
+msgid "Director Manager Approval Date"
+msgstr "Date d'approbation du directeur-gérant"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_res_company__director_validation_amount
+msgid "Director Validation Amount"
+msgstr "Montant de la validation du directeur"
+
+#. module: bi_sale_tripple_approval
+#: model:res.groups,name:bi_sale_tripple_approval.sale_director_manager_limit
+msgid "Director(sale)"
+msgstr "Directeur (vente)"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.actions.act_window,name:bi_sale_tripple_approval.action_sale_finance
+msgid "Finanace Manager Orders"
+msgstr "Commandes de Finanace Manager"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields.selection,name:bi_sale_tripple_approval.selection__sale_order__state__second_approve
+#: model_terms:ir.ui.view,arch_db:bi_sale_tripple_approval.view_sale_order_form_inherit
+msgid "Finance Approval"
+msgstr "Approbation des finances"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_sale_order__finance_manager_id
+msgid "Finance Manager"
+msgstr "Responsable des finances"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_sale_order__finance_manager_id_approval_date
+msgid "Finance Manager Approval Date"
+msgstr "Date d'approbation du directeur financier"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_res_company__sale_finance_approval_email_temp_id
+msgid "Finance Manager Approval Email Template"
+msgstr "Modèle d'e-mail d'approbation du responsable financier"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_res_company__finance_validation_amount
+msgid "Finance Validation Amount"
+msgstr "Montant de la validation financière"
+
+#. module: bi_sale_tripple_approval
+#: model:res.groups,name:bi_sale_tripple_approval.sale_finance_manager_limit
+msgid "Finance manager(sale)"
+msgstr "Directeur financier (vente)"
+
+#. module: bi_sale_tripple_approval
+#: code:addons/bi_sale_tripple_approval/models/inherited_sale_order.py:0
+#: code:addons/bi_sale_tripple_approval/models/inherited_sale_order.py:0
+#: code:addons/bi_sale_tripple_approval/models/inherited_sale_order.py:0
+#: code:addons/bi_sale_tripple_approval/models/inherited_sale_order.py:0
+#, python-format
+msgid "It is not allowed to confirm an order in the following states: %s"
+msgstr "Il n'est pas permis de confirmer une commande dans les états suivants: %s"
+"Il n'est pas autorisé de confirmer une commande aux étapes suivantes : %s"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields.selection,name:bi_sale_tripple_approval.selection__sale_order__state__done
+msgid "Locked"
+msgstr "Bloqué"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_sale_order__sale_manager
+msgid "Manager"
+msgstr "Directrice"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_sale_order__sale_manager_approval_date
+msgid "Manager Approval Date"
+msgstr "Date d'approbation du responsable"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields.selection,name:bi_sale_tripple_approval.selection__sale_order__state__draft
+msgid "Quotation"
+msgstr "Devis"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields.selection,name:bi_sale_tripple_approval.selection__sale_order__state__sent
+msgid "Quotation Sent"
+msgstr "Devis envoyé"
+
+#. module: bi_sale_tripple_approval
+#: model_terms:ir.ui.view,arch_db:bi_sale_tripple_approval.view_sale_order_form_inherit
+msgid "Refuse"
+msgstr "Refuser"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_sale_order__refuse_reason
+msgid "Refuse Reason"
+msgstr "Refuser la raison"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_sale_order__refused_by_id
+msgid "Refused By"
+msgstr "Refusé par"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_sale_order__refause_date
+msgid "Refused Date"
+msgstr "Date de refus"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_res_company__so_double_validation_amount
+msgid "SO Double validation Amount"
+msgstr "SO Double validation Montant"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_res_company__sale_approval_email_temp_id
+msgid "Sale Manager Approval Email Template"
+msgstr "Modèle d'e-mail d'approbation du directeur des ventes"
+
+#. module: bi_sale_tripple_approval
+#: model:mail.template,subject:bi_sale_tripple_approval.sale_order_approval_email_template
+#: model:mail.template,subject:bi_sale_tripple_approval.sale_order_approval_email_template_director
+#: model:mail.template,subject:bi_sale_tripple_approval.sale_order_approval_email_template_finance
+msgid "Sale Order ${object.name} (Approval Waiting)"
+msgstr "Bon de commande $ {object.name} (en attente d'approbation)"
+
+#. module: bi_sale_tripple_approval
+#: model:mail.template,subject:bi_sale_tripple_approval.sale_refused_email_template
+msgid "Sale Order ${object.name} (Canceled)"
+msgstr "Commande de vente $ {object.name} (annulée)"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_res_company__sale_refuse_email_temp_id
+msgid "Sale Refuse Email Template"
+msgstr "Modèle d'e-mail de refus de vente"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_sale_order__sale_department_manager_id
+msgid "Sales Department Manager"
+msgstr "Responsable du département des ventes"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.actions.act_window,name:bi_sale_tripple_approval.action_sale_director
+#: model:ir.ui.menu,name:bi_sale_tripple_approval.menu_sale_order_director
+msgid "Sales Director Orders"
+msgstr "Commandes du directeur des ventes"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.ui.menu,name:bi_sale_tripple_approval.menu_sale_order_finance
+msgid "Sales Finance Manager Orders"
+msgstr "Commandes du directeur financier des ventes"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.actions.act_window,name:bi_sale_tripple_approval.action_sale_manager
+#: model:ir.ui.menu,name:bi_sale_tripple_approval.menu_sale_order_manager
+msgid "Sales Manager Orders"
+msgstr "Commandes du directeur des ventes"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model,name:bi_sale_tripple_approval.model_sale_order
+#: model:ir.model.fields.selection,name:bi_sale_tripple_approval.selection__sale_order__state__sale
+msgid "Sales Order"
+msgstr "Bon de commande"
+
+#. module: bi_sale_tripple_approval
+#: model_terms:ir.ui.view,arch_db:bi_sale_tripple_approval.view_company_form_inherit
+msgid "Sales tripple approval setting"
+msgstr "Paramètre d'approbation du triple des ventes"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_sale_order__state
+msgid "Status"
+msgstr "État"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_res_company__three_step_approval
+msgid "Three Step Approval"
+msgstr "Approbation en trois étapes"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields.selection,name:bi_sale_tripple_approval.selection__sale_order__state__approve
+msgid "To Approval"
+msgstr "À l'approbation"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_sale_order__sale_director
+msgid "director"
+msgstr "réalisatrice"
+
+#. module: bi_sale_tripple_approval
+#: model:ir.model.fields,field_description:bi_sale_tripple_approval.field_sale_order__finance_manager
+msgid "finance"
+msgstr "la finance"

@@ -1,0 +1,9 @@
+<odoo>
+    <record id="import_purchase_line_sample" model="ir.actions.report">
+        <field name="name">Download Sample File</field>
+        <field name="model">wizard.import.purchase.line</field>
+        <field name="report_type">xlsx</field>
+        <field name="report_name">purchase_line_import_sample</field>
+        <field name="report_file">purchase_line_import_sample</field>
+    </record>
+</odoo>

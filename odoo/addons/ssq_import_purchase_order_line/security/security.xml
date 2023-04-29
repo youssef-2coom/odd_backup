@@ -1,0 +1,9 @@
+<odoo>
+    <data>
+        <record id="group_purchase_import_line_user" model="res.groups">
+            <field name="name">User : Import Purchase Order Lines</field>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+    </data>
+</odoo>

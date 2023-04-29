@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+    
+    <!-- Hr employee inherit Legal Leaves -->
+    <record id="view_employee_form_paid_leave_inherit" model="ir.ui.view">
+        <field name="name">hr.employee.leave.form.inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='active_group']" position="after">
+                <group string="Leaves" groups="base.group_no_one">
+                    <label for="remaining_paid_leaves"/>
+                    <div>
+                        <field name="remaining_paid_leaves" class="oe_inline"/> days
+                    </div>
+                </group>
+            </xpath>
+        </field>
+    </record>
+    
+
+</odoo>

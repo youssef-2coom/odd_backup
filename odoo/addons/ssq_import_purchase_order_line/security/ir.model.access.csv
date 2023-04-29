@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_wizard_import_purchase_line_purchase_user,wizard_import_purchase_line_purchase_user,model_wizard_import_purchase_line,__export__.res_groups_113_ab57d50c,1,1,1,1
